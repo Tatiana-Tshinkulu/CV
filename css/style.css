@@ -1,0 +1,156 @@
+ /* === GLOBAL === */
+        body {
+            margin-right: 150px; /* pour ne pas que le contenu soit caché derrière le menu */
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            color: gray;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        footer .btn-menu:hover {
+            background-color: #4b4490;   /* un peu plus sombre au survol */
+            transform: scale(1.05);
+        }
+
+/* === MENU === */
+         #menu {
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            position: fixed;
+            right: 10px;
+            top: 50px;
+            width: 120px;
+            text-align: center;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .btn-menu{
+            display: block;
+            text-decoration: none; /* enlève le soulignement */
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn-menu:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.05);
+        }
+        .btn-menu:active{
+            transform: scale(0.95);
+        }
+        /* === TESTS CI-DESSOUS === */
+
+        /*
+        .btn-menu:first-child{
+            background-color: #bada55;
+        }
+        .btn-menu:last-child{
+            border-color: purple;
+        }
+        .btn-menu:visited{
+            background-color: white;
+            color: purple;
+        }
+        */
+        
+
+/* === HEADER === */
+        #header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .btn-contact{
+            display: block;
+            text-decoration: none; /* enlève le soulignement */
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            border-radius: 8px;
+            transition: 0.3s;
+            padding: 5px;
+        }
+        .btn-contact:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.05);
+        }
+        .btn-contact:active{
+            transform: scale(0.95);
+        }
+
+/* === TABLES === */
+        table{
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px; /* espace intérieur */
+            height: 20px;   /* hauteur des cases */
+        }
+        th {
+            background-color: #ddd;
+        }
+        
+/* === TABLES SPECIFIQUES === */
+        .table-loisirs{
+            width: 50%;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+        .table-loisirs tr:hover{
+            color: rgb(183, 21, 21);
+        }
+
+/* === IMAGES === */
+        .img-center{
+            display: block;
+            margin: auto;
+        }
+        .img-center:hover {
+            transform: scale(1.05);
+            opacity: 0.5;
+        }
+        .img-stages{
+            display: block;
+            margin: 150px;
+        }
+
+/* === LAYOUT === */
+        #interets {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        
+        /* === TESTS CI-DESSOUS === */
+        /*
+        #test-btn{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn-test{
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            color: black;
+            border: 2px solid black;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        */
