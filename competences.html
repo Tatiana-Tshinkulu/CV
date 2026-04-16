@@ -28,7 +28,7 @@
     <!-- Contenu principal -->
      <main>
         <h2>Bienvenue sur mon CV</h2>
-        <h3>Voici mes différentes compétences</h3>
+        <h3 id="nbrComp"></h3>
 
         <img src="images/hardSkills.webp" width="500" alt="Image Hard Skills" class="img-center">
         <br>
@@ -39,27 +39,14 @@
                 <th>Compétences</th>
                 <th>Détails</th>
             </tr>
-            <tr>
-                <td>Microsoft Office</td>
-                <td>Word, PowerPoint, Excell, Navision(ERP)</td>
-            </tr>
-            <tr>
-                <td>Bases Programmation</td>
-                <td>Java POO, C# POO, Bash, HTML, CSS</td>
-            </tr>
-            <tr>
-                <td>Magasin/Stock</td>
-                <td>Caisse, entretien du lieu de travail, réception/rangement marchandises</td>
-            </tr>
-            <tr>
-                <td>Relation client</td>
-                <td>Acceuillir, conseiller, informer, fidéliser</td>
-            </tr>
-            <tr>
-                <td>Couture</td>
-                <td>Main/Machine, tricot, crochet, broderie, patronnage</td>
-            </tr>
+
+            <tbody id="tableCompetences">
+                <!-- rempli par JS-->
+            </tbody>
         </table>
+
+        <script src="js/script.js"></script>
+
     </main>
     <footer>
         <a href="mailto:tatianatshinkulu@yahoo.fr?subject=Contact%20via%20CV" class="btn-contact">Me contacter</a>
